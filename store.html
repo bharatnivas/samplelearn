@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
     <meta name="description" content="this is the description">
-    <title>Document</title>
+    <title>Store</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 <span class="shop-item-titles">Album 2</span>
                 <img class="shop-item-image" src="images/music2.jpeg" alt=" ">
                 <div class="shop-item-details">
-                    <span class="shop-item-price">$12.99</span>
+                    <span class="shop-item-price">$14.99</span>
                     <button class="btn btn-primary shop-item-button" role=" button ">ADD TO CART</button>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <span class="shop-item-titles">Album 3</span>
                 <img class="shop-item-image" src="images/music3.jpg" alt=" ">
                 <div class="shop-item-details">
-                    <span class="shop-item-price">$12.99</span>
+                    <span class="shop-item-price">$9.99</span>
                     <button class="btn btn-primary shop-item-button" role=" button ">ADD TO CART</button>
                 </div>
             </div>
@@ -59,71 +59,71 @@
                 <span class="shop-item-titles">Album 4</span>
                 <img class="shop-item-image" src="images/music4.jpeg" alt=" ">
                 <div class="shop-item-details">
-                    <span class="shop-item-price">$12.99</span>
+                    <span class="shop-item-price">$19.99</span>
                     <button class="btn btn-primary shop-item-button" role=" button ">ADD TO CART</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- sectiontwo -->
-    <section>
-        <h2>Merch</h2>
-        <div>
-            <div>
-                <strong>T-shirt</strong>
+    <section class="container container-section">
+        <h2 class="section-header">Merch</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-titles">T-shirt</span>
+                <img class="shop-item-image" src="images/shirt.jpeg" alt=" ">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" role=" button ">ADD TO CART</button>
+                </div>
             </div>
-            <img src="images/shirt.jpeg " alt=" ">
-            <div>
-                <span>$19.99</span>
-                <button role="button ">ADD TO CART</button>
-            </div>
-        </div>
-
-        <div>
-            <div>
-                <strong>Cofee cup</strong>
-            </div>
-            <img src="images/cup.jpeg " alt=" ">
-            <div>
-                <span>$19.99</span>
-                <button role="button ">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-titles">Cofee Cup</span>
+                <img class="shop-item-image" src="images/cup.jpeg" alt=" ">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" role=" button ">ADD TO CART</button>
+                </div>
             </div>
         </div>
     </section>
     <!-- sectionthree -->
-    <section>
-        <h2>Cart</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
+    <section class="container container-section">
+        <h2 class="section-header">Cart</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div>
-            <img src="images/cup.jpeg " alt=" " width="100 " height="100 ">
-            <span>T-Shirt-</span>
-            &lt;&gt;
-            <span>$19.99</span>
-            <input type="number " value="1 ">
-            <button role="button ">REMOVE</button>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/shirt.jpeg" alt=" " width="100 " height="100 ">
+                    <span class="cart-item-title">T-Shirt-</span>
+                </div>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number " value="1 ">
+                    <button class="btn btn-danger cart-quantity-button" role="button ">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="images/cup.jpeg" alt=" " width="100 " height="100 ">
+                    <span class="cart-item-title">Cup</span>
+                </div>
+                <span class="cart-price cart-column">$6.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number " value="1 ">
+                    <button class="btn btn-danger cart-quantity-button" role="button ">REMOVE</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="images/shirt.jpeg " alt=" " width="100 " height="100 ">
-            <span>alubum 3-</span>
-            &lt;&gt;
-            <span>$19.99</span>
-            <input type="number " value="2 ">
-            <button role="button ">REMOVE</button>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$39.97</span>
         </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>$39.97</span>
-        </div>
-        <div>
-            <button role="button ">PURCHASE</button>
-        </div>
+        <button class="btn-primary btn-purchase" role="button">PURCHASE</button>
     </section>
     <footer class="main-footer ">
         <div class="container main-footer-container ">
